@@ -3,6 +3,7 @@ import Nav from './components/Nav/index';
 import About from './components/About/index';
 import Projects from './components/Projects/index';
 import ContactForm from './components/Contact/index';
+import Footer from './components/Footer';
 
 function App() {
   const  [categories] = useState([
@@ -32,6 +33,7 @@ function App() {
             <ContactForm></ContactForm>
           )}
     </main>
+    <Footer></Footer>
   </div>
   );
 }
