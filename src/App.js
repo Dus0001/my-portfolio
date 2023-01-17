@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav';
-import About from './components/About';
-import Projects from './components/Projects';
-import ContactForm from './components/Contact';
+import Nav from './components/Nav/index';
+import About from './components/About/index';
+import Projects from './components/Projects/index';
+import ContactForm from './components/Contact/index';
 
 function App() {
   const  [categories] = useState([
@@ -14,12 +14,13 @@ function App() {
   const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
-    <Nav>
+    <Nav
        categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
+      >
       </Nav>
     <main>
     {!contactSelected ? (

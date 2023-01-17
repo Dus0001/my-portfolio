@@ -3,24 +3,14 @@ import React, { useState } from 'react';
 const PhotoList = ({ category }) => {
 const [photos] = useState([
     {
-      name: 'Grocery aisle',
+      name: 'Book Worms',
       category: 'app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'An app thats allows users to search for books and leave review.',
     },
     {
-      name: 'Grocery booth',
+      name: 'Ticket Gurusss',
       category: 'app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Building exterior',
-      category: 'app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-    },
-    {
-      name: 'Restaurant table',
-      category: 'app',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      description: 'An app that allows users to to search for events by city and book.',
     },
 ]);
     const currentPhotos = photos.filter((photo) => photo.category === category);
