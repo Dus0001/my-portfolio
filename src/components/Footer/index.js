@@ -3,10 +3,10 @@ import React from "react";
 export default function Footer() {
     return (
         <footer>
-        <P>
+        <h2>
         Thank you for visiting! 
         -Daven
-        </P>
+        </h2>
 
     </footer>
     )
